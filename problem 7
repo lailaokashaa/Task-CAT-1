@@ -1,0 +1,13 @@
+a = input("Input n and k: ")
+n = int(a.split(" ")[0])
+k = int(a.split(" ")[1])
+b = input("Input  n scores: ")
+
+willAdvance = 0
+scores = b.split()
+print(scores)
+for element in scores:
+    if int(element) >= int(scores[k-1]) and int(scores[k-1]) > 0:
+        willAdvance += 1
+
+print(willAdvance)
